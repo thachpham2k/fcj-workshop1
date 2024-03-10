@@ -21,13 +21,13 @@ AWS CodeCommit là một dịch vụ quản lý mã nguồn được quản lý 
 1. Trong giao diện **Create Repository** 
    
     - Tại mục **Repository name** điền `workhsop-codecommit`
-    ![Repository settings](/images/4-cicd/4.1-codecommit/4.1.1-create.png)
+    ![Repository settings](/fcj-workshop1/images/4-cicd/4.1-codecommit/4.1.1-create.png)
 
     - Kéo xuống cuối trang chọn **Create**
 
 1. Trong giao diện **CodeCommit Repositories** chọn vào repository vừa tạo (`workshop-codecommit`). Ở phần **Connection Steps** lưu giá trị repository url lại
 
-    ![Connection Steps](/images/4-cicd/4.1-codecommit/4.1.2-connection.png)
+    ![Connection Steps](/fcj-workshop1/images/4-cicd/4.1-codecommit/4.1.2-connection.png)
 
 1. Đăng nhập vào AWS Cli và git
    
@@ -45,7 +45,7 @@ AWS CodeCommit là một dịch vụ quản lý mã nguồn được quản lý 
     # Enable using HTTP path for Git
     git config --global credential.UseHttpPath true
     ```
-    ![Config aws cli and git](/images/4-cicd/4.1-codecommit/4.1.3-cli-config.png)
+    ![Config aws cli and git](/fcj-workshop1/images/4-cicd/4.1-codecommit/4.1.3-cli-config.png)
 
 1. Mã nguồn hugo project {{% button href="/source/000000-Workshop.zip" icon="fas fa-download" icon-position="right" %}}Download Source{{% /button %}}
 
@@ -61,13 +61,13 @@ AWS CodeCommit là một dịch vụ quản lý mã nguồn được quản lý 
 
     Lưu ý: https://git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/workshop-codecommit là đường dẫn đến codecommit repo là url được lấy ở bước 4 (Trong phần Connection Steps)
   
-    ![Push code to AWS CodeCommit](/images/4-cicd/4.1-codecommit/4.1.4-git-commit.png)
+    ![Push code to AWS CodeCommit](/fcj-workshop1/images/4-cicd/4.1-codecommit/4.1.4-git-commit.png)
   
-    ![Push code to AWS CodeCommit (2)](/images/4-cicd/4.1-codecommit/4.1.5-git-commit.png)
+    ![Push code to AWS CodeCommit (2)](/fcj-workshop1/images/4-cicd/4.1-codecommit/4.1.5-git-commit.png)
 
 1. Khi đã hoàn thành, mã nguồn của bạn đã được đẩy thành công lên AWS CodeCommit.
 
-![Push sourcecode success](/images/4-cicd/4.1-codecommit/4.1.6-commit-success.png)
+![Push sourcecode success](/fcj-workshop1/images/4-cicd/4.1-codecommit/4.1.6-commit-success.png)
 
 ## Tài liệu đính kèm
 

@@ -59,20 +59,20 @@ Một số điều cần biết về S3:
 
 1. Chọn vào **Edit** của tính năng **Static website hosting**
  
-    ![Edit Static Website Hosting feature](/images/3-s3_staticweb/3.6-config.png)
+    ![Edit Static Website Hosting feature](/fcj-workshop1/images/3-s3_staticweb/3.6-config.png)
 
 1. Ở trang **Edit static website hosting**:
 
    1. **Static website hosting**: `enable`
    1. **Index document**: `index.html`
    
-        ![Static Website Hosting interface](/images/3-s3_staticweb/3.7-config.png)
+        ![Static Website Hosting interface](/fcj-workshop1/images/3-s3_staticweb/3.7-config.png)
 
     1. Chọn **Save changes**
 
 1. Quanh trở lại tính năng **Static website hosting**, giao diện hiển thị đã thay đổi. (Lúc này lưu giá trị **bucket website endpoint** lại để sau này sử dụng)
 
-    ![Enable Static Website Hosting success](/images/3-s3_staticweb/3.8-config.png)
+    ![Enable Static Website Hosting success](/fcj-workshop1/images/3-s3_staticweb/3.8-config.png)
 
     > ℹ️  **Note**     
     > Lúc này S3 website endpoint này có thể xem là vẫn chưa hoạt động vì:
@@ -80,12 +80,12 @@ Một số điều cần biết về S3:
     > - Nếu có file thì người dùng vẫn không có quyền để truy cập file trong S3.    
     > -> Bước tiếp theo sẽ tiến hành cấu hình policy để người dùng có quyền truy cập vào nội dung file bên trong S3.    
 
-    ![Access S3 static website using http](/images/3-s3_staticweb/3.9-check.png)
+    ![Access S3 static website using http](/fcj-workshop1/images/3-s3_staticweb/3.9-check.png)
 
 1. Tìm đến Tab **Permissions**
 1. Tìm đến phần **Bucket policy**, chọn **Edit**
 
-    ![Bucket Policy](/images/3-s3_staticweb/3.10-policy.png)
+    ![Bucket Policy](/fcj-workshop1/images/3-s3_staticweb/3.10-policy.png)
 
 1. Dán đoạn json policy phía dưới vào.
 

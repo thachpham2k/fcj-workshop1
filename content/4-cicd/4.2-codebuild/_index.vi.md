@@ -58,7 +58,7 @@ Một số tính năng quan trọng của AWS CodeBuild bao gồm:
     git push
     ```
 
-    ![Push buildspec.yml file to Codecommit](/images/4-cicd/4.2-codebuild/4.2.1-add-buildspec.png)
+    ![Push buildspec.yml file to Codecommit](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.1-add-buildspec.png)
 
 1. Truy cập vào dịch vụ **AWS CodeBuild** hoặc có thể thông qua link [AWS CodeBuild](https://console.aws.amazon.com/codesuite/codebuild/projects)
 
@@ -68,7 +68,7 @@ Một số tính năng quan trọng của AWS CodeBuild bao gồm:
 
      - Phần Project configuration: Tại mục **project name** điền `workshop-codebuild`
      
-       ![Project configuration](/images/4-cicd/4.2-codebuild/4.2.2-create.png)
+       ![Project configuration](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.2-create.png)
 
      - Phần Source:
        - Mục **Source provider** chọn **AWS CodeCommit**
@@ -76,7 +76,7 @@ Một số tính năng quan trọng của AWS CodeBuild bao gồm:
        - Mục **reference type** chọn **Branch**
        - Mục **Branch** chọn **master**
        
-       ![Source](/images/4-cicd/4.2-codebuild/4.2.3-create.png)
+       ![Source](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.3-create.png)
 
      - Phần Environment:
        - Mục **Compute** chọn **EC2**
@@ -86,16 +86,16 @@ Một số tính năng quan trọng của AWS CodeBuild bao gồm:
        - Mục **Service role** chọn **Existing service role**
        - Mục **Role ARN** chọn ARN của role đã được tạo ở phần 2.3
        
-       ![Environment](/images/4-cicd/4.2-codebuild/4.2.4-create.png)
+       ![Environment](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.4-create.png)
      
      - Phần Buildspec:
        - Mục **Build specifications** chọn **Use a buildspec file**
        - Mục **Buildspec name** điền `buildspec.yml` (điền vị trí lưu file buildspec được tạo ở bước 1)
 
-       ![Buildspec](/images/4-cicd/4.2-codebuild/4.2.5-create.png)
+       ![Buildspec](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.5-create.png)
 
 1. Nhấn vào nút **Create Build project** ở cuối trang
 
 1. Sau khi tạo build project thì có thể chạy thử bằng cách nhấn vào nút **Start build** màu cam bên phải. Kết quả của quá trình xây dựng sẽ được hiển thị ở tab **Build history**
 
-  ![Test build](/images/4-cicd/4.2-codebuild/4.2.6-build.png)
+  ![Test build](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.6-build.png)

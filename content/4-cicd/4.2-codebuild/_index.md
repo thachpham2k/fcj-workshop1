@@ -58,7 +58,7 @@ Some key features of AWS CodeBuild include:
     git push
     ```
 
-    ![Push buildspec.yml file to Codecommit](/images/4-cicd/4.2-codebuild/4.2.1-add-buildspec.png)
+    ![Push buildspec.yml file to Codecommit](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.1-add-buildspec.png)
 
 3. Access the AWS CodeBuild service or through the link [AWS CodeBuild](https://console.aws.amazon.com/codesuite/codebuild/projects)
 
@@ -68,7 +68,7 @@ Some key features of AWS CodeBuild include:
 
      - **Project configuration** section: In the **project name** field, enter `workshop-codebuild`
      
-       ![Project configuration](/images/4-cicd/4.2-codebuild/4.2.2-create.png)
+       ![Project configuration](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.2-create.png)
 
      - **Source** section:
        - For **Source provider**, choose **AWS CodeCommit**
@@ -76,7 +76,7 @@ Some key features of AWS CodeBuild include:
        - For **reference type**, choose **Branch**
        - For **Branch**, select **master**
        
-       ![Source](/images/4-cicd/4.2-codebuild/4.2.3-create.png)
+       ![Source](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.3-create.png)
 
      - **Environment** section:
        - For **Compute**, choose **EC2**
@@ -86,16 +86,16 @@ Some key features of AWS CodeBuild include:
        - For **Service role**, choose **Existing service role**
        - For **Role ARN**, select the ARN of the role created in step 2.3
        
-       ![Environment](/images/4-cicd/4.2-codebuild/4.2.4-create.png)
+       ![Environment](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.4-create.png)
      
      - **Buildspec** section:
        - For **Build specifications**, choose **Use a buildspec file**
        - For **Buildspec name**, enter `buildspec.yml` (enter the location where the buildspec file is saved in step 1)
 
-       ![Buildspec](/images/4-cicd/4.2-codebuild/4.2.5-create.png)
+       ![Buildspec](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.5-create.png)
 
 6. Click **Create Build project** at the bottom of the page
 
 7. Once the build project is created, you can test it by clicking the orange **Start build** button on the right. The result of the build process will be displayed on the **Build history** tab.
 
-  ![Test build](/images/4-cicd/4.2-codebuild/4.2.6-build.png)
+  ![Test build](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.6-build.png)

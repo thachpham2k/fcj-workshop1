@@ -37,16 +37,16 @@ Some key things to know about S3:
     > 💭 **Mẹo**   
     Since the bucket name must be unique, I usually add a sequence of numbers after the desired name.
     
-    ![General configuration](/images/3-s3_staticweb/3.1-create.png)
+    ![General configuration](/fcj-workshop1/images/3-s3_staticweb/3.1-create.png)
 
     - Object Ownership: `ACLs enabled`
     
-    ![Object ownership](/images/3-s3_staticweb/3.2-create.png)
+    ![Object ownership](/fcj-workshop1/images/3-s3_staticweb/3.2-create.png)
 
     - Turn off **Block all public access**
     - Click `I acknowledge that the current settings might result in this bucket and the objects within becoming public.` in the warning **Turning off block all public access might result in this bucket and the objects within becoming public**
     
-    ![Block public access settings for this bucket](/images/3-s3_staticweb/3.3-create.png)
+    ![Block public access settings for this bucket](/fcj-workshop1/images/3-s3_staticweb/3.3-create.png)
 
     - Choose `Create Bucket`
 
@@ -54,24 +54,24 @@ Some key things to know about S3:
    
 1. Feature **S3 static hosting** in the **Properties** tab. Choose **Properties** and then navigate to **Static website hosting** at the bottom of the tab.
 
-    ![Select Properties tab](/images/3-s3_staticweb/3.5-config.png)
+    ![Select Properties tab](/fcj-workshop1/images/3-s3_staticweb/3.5-config.png)
 
 1. Choose **Edit** in **Static website hosting**
  
-    ![Edit Static Website Hosting feature](/images/3-s3_staticweb/3.6-config.png)
+    ![Edit Static Website Hosting feature](/fcj-workshop1/images/3-s3_staticweb/3.6-config.png)
 
 1. On the **Edit static website hosting**:
 
    1. **Static website hosting**: `enable`
    1. **Index document**: `index.html`
    
-        ![Static Website Hosting interface](/images/3-s3_staticweb/3.7-config.png)
+        ![Static Website Hosting interface](/fcj-workshop1/images/3-s3_staticweb/3.7-config.png)
 
     1. Click **Save changes**
 
 1. At the **Static website hosting** feature, save the **bucket website endpoint** url for later use
 
-    ![Enable Static Website Hosting success](/images/3-s3_staticweb/3.8-config.png)
+    ![Enable Static Website Hosting success](/fcj-workshop1/images/3-s3_staticweb/3.8-config.png)
 
     > ℹ️  **Note**     
     > At this point, this S3 website endpoint may still not be working because:
@@ -79,12 +79,12 @@ Some key things to know about S3:
     > - Even if there is a file, users still do not have permission to access files within S3.
     > -> The next step will configure a policy to grant users access to the content of files inside S3. 
 
-    ![Access S3 static website using http](/images/3-s3_staticweb/3.9-check.png)
+    ![Access S3 static website using http](/fcj-workshop1/images/3-s3_staticweb/3.9-check.png)
 
 1. Choose **Permissions** tab
 1. Navigate to the **Bucket policy** section, choose **Edit**
 
-    ![alt text](/images/3-s3_staticweb/3.10-policy.png)
+    ![alt text](/fcj-workshop1/images/3-s3_staticweb/3.10-policy.png)
 
 1. Paste the following json policy snippet:.
 
