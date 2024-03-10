@@ -4,7 +4,7 @@ date :  "`r Sys.Date()`"
 weight : 1 
 chapter : false
 ---
-# Deploying a Hugo Website with AWS CICD Toolset
+# Deploying a Hugo Website with AWS CICD Tools
 
 ### Overall
 
