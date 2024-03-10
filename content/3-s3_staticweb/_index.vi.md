@@ -38,16 +38,16 @@ Một số điều cần biết về S3:
     Vì tên của bucket bắt buộc phải là duy nhất nên thường mình sẽ thêm 1 dãy số phía sau tên mong muốn.
     
     
-    ![General configuration](/images/3-s3_staticweb/3.1-create.png)
+    ![General configuration](/fcj-workshop1/images/3-s3_staticweb/3.1-create.png)
 
     - Object Ownership: `ACLs enabled`
     
-    ![Object ownership](/images/3-s3_staticweb/3.2-create.png)
+    ![Object ownership](/fcj-workshop1/images/3-s3_staticweb/3.2-create.png)
 
     - Tắt tính năng **Block all public access**
     - Chọn vào `I acknowledge that the current settings might result in this bucket and the objects within becoming public.` trong cảnh báo **Turning off block all public access might result in this bucket and the objects within becoming public**
     
-    ![Block public access settings for this bucket](/images/3-s3_staticweb/3.3-create.png)
+    ![Block public access settings for this bucket](/fcj-workshop1/images/3-s3_staticweb/3.3-create.png)
 
     - Cuối cùng là chọn `Create Bucket`
 
@@ -55,7 +55,7 @@ Một số điều cần biết về S3:
    
 1. Tính năng **S3 static hosting** nằm ở tab **Properties** của bucket. Theo như lúc mình làm thì sẽ chọn tab **Properties** sau đó tìm đến **Static website hosting** ở cuối của tab. 
 
-    ![Select Properties tab](/images/3-s3_staticweb/3.5-config.png)
+    ![Select Properties tab](/fcj-workshop1/images/3-s3_staticweb/3.5-config.png)
 
 1. Chọn vào **Edit** của tính năng **Static website hosting**
  
