@@ -19,7 +19,7 @@ In this step, we will create an IAM Role. This IAM Role will be used by AWS Code
 
 1. Choose Create Policies.
     
-    ![IAM Policies interface](/images/2-prerequiste/2.3-iam-role/2.3.1-iam-policies.png)
+    ![IAM Policies interface](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.1-iam-policies.png)
 
 1. On the **Specify permissions** interface of **Create Policies**, switch to the json tab, then paste the following json snippet, and select **next**
 
@@ -68,15 +68,15 @@ In this step, we will create an IAM Role. This IAM Role will be used by AWS Code
 
    1. Enter **Policy name**: `fcj-workshop`
    
-   ![Name policy](/images/2-prerequiste/2.3-iam-role/2.3.2-iam-policies.png)
+   ![Name policy](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.2-iam-policies.png)
    
    2. Review information
    
-   ![Review Policy](/images/2-prerequiste/2.3-iam-role/2.3.3-iam-policies.png)
+   ![Review Policy](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.3-iam-policies.png)
    
    3. Tag the policy and select **Create policy**. (You can skip adding tags, but I prefer to add tags to clean up resources completely after the lab)
    
-   ![Add tags and create policy](/images/2-prerequiste/2.3-iam-role/2.3.4-iam-policies.png)
+   ![Add tags and create policy](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.4-iam-policies.png)
 
 3. On the left navigation bar, select [Roles](https://console.aws.amazon.com/iam/home#/roles) 
 
@@ -84,28 +84,28 @@ In this step, we will create an IAM Role. This IAM Role will be used by AWS Code
 
 7. On the **Select trusted entity**, choose `AWS Service`, then select `CodeBuild` và click **Next**
 
-	![Select trusted entity](/images/2-prerequiste/2.3-iam-role/2.3.5-iam-roles.png)
+	![Select trusted entity](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.5-iam-roles.png)
 
 9. In **Add permissions** section, choose `fcj-workshop` and click **next**
 	
-	![Select create policy](/images/2-prerequiste/2.3-iam-role/2.3.6-iam-roles.png)
+	![Select create policy](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.6-iam-roles.png)
 
 10. On the **Name, review, and create**
     
 	1. Enter **Role name**: `fcj-workshop-role`
 	
-	![Name role](/images/2-prerequiste/2.3-iam-role/2.3.7-iam-roles.png)
+	![Name role](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.7-iam-roles.png)
 	
 	2. Tag the role and select **Create Role**.
 	
-	![Add tags and create role](/images/2-prerequiste/2.3-iam-role/2.3.8-iam-roles.png)
+	![Add tags and create role](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.8-iam-roles.png)
 
 11. Go back to the [Roles](https://console.aws.amazon.com/iam/home#/roles), Select the created Role (`fcj-workshop-role`)
 	
-	![Access created role](/images/2-prerequiste/2.3-iam-role/2.3.9-iam-roles.png)
+	![Access created role](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.9-iam-roles.png)
 
 12. Click on tab `Trust relationships` then select `Edit trust policy`
-	![Tab Trust relationships](/images/2-prerequiste/2.3-iam-role/2.3.10-iam-roles.png)
+	![Tab Trust relationships](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.10-iam-roles.png)
 
 13. On the **Edit trust policy**, paste the following json:
 	
@@ -148,6 +148,6 @@ In this step, we will create an IAM Role. This IAM Role will be used by AWS Code
 	> ℹ️ Note:    
 	However, this is for lab purposes; in practice, roles should be clearly divided for which service to avoid having a role with unnecessary privileges (least privilege) and for easy maintenance.
 
-	![Edit Trust policy](/images/2-prerequiste/2.3-iam-role/2.3.11-iam-roles.png)
+	![Edit Trust policy](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.11-iam-roles.png)
 
 14. Choose **Update policy**
