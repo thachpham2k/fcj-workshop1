@@ -209,7 +209,7 @@ Trong bước này, chúng ta sẽ tạo một pipeline hoàn chỉnh sử dụn
 
     Ở bước này, chúng ta sẽ tạo AWS CodeCommit repository. Tương tự như mục 2 phần [Thực hành của TẠO CODECOMMIT ĐỂ LƯU TRỮ MÃ NGUỒN](https://thachpham2k.github.io/fcj-workshop1/vi/4-cicd/4.1-codecommit/#th%E1%BB%B1c-h%C3%A0nh)
 
-    ![Repository settings](/fcj-workshop1/images/4-cicd/4.1-codecommit/4.1.1-create.png)
+    ![Repository settings](/$REPO_NAMEimages/4-cicd/4.1-codecommit/4.1.1-create.png)
 
     ```hcl
     resource "aws_codecommit_repository" "codecommit" {
@@ -222,7 +222,7 @@ Trong bước này, chúng ta sẽ tạo một pipeline hoàn chỉnh sử dụn
 
     Bước này tương tự như mục 3 phần [Thực hành của TẠO CODEBUILD](https://thachpham2k.github.io/fcj-workshop1/vi/4-cicd/4.2-codebuild/#th%E1%BB%B1c-h%C3%A0nh)
 
-    ![Source](/fcj-workshop1/images/4-cicd/4.2-codebuild/4.2.3-create.png)
+    ![Source](/$REPO_NAMEimages/4-cicd/4.2-codebuild/4.2.3-create.png)
 
     Ở phần `source` (CodeCommit), nếu cấu hình reference type là branch `main`, chúng ta sử dụng argument `source_version = main` hoặc `source_version = refs/heads/main`.
 

@@ -15,7 +15,7 @@ Trong bước này chúng ta sẽ tiến hành tạo IAM Role. Trong IAM Role n�
 1. Truy cập vào giao diện [quản trị dịch vụ IAM](https://console.aws.amazon.com/iam/home)
 1. Ở thanh điều hướng bên trái, chọn [Policies](https://console.aws.amazon.com/iam/home#/policies) 
 1. Chọn Create Policies
-	![IAM Policies interface](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.1-iam-policies.png)
+	![IAM Policies interface](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.1-iam-policies.png)
 1. Tại giao diện **Specify permissions** của **Create Policies**, chuyển qua tab json rồi dán đoạn json phía dưới vào sau đó chọn **next**
 
     ```json
@@ -63,15 +63,15 @@ Trong bước này chúng ta sẽ tiến hành tạo IAM Role. Trong IAM Role n�
 
    1. Nhập **Policy name**: `fcj-workshop`
    
-   ![Name policy](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.2-iam-policies.png)
+   ![Name policy](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.2-iam-policies.png)
    
    2. Review lại thông tin 
    
-   ![Review Policy](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.3-iam-policies.png)
+   ![Review Policy](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.3-iam-policies.png)
    
    3. Đặt tags cho policy và chọn **Create policy**. (Code thể bỏ qua bước đặt tag nhưng với mình thì nên đặt tags để sau khi làm lab có thể dọn dẹp resource một cách hoàn toàn kẻo bị mất tiền *ngu*)
    
-   ![Add tags and create policy](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.4-iam-policies.png)
+   ![Add tags and create policy](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.4-iam-policies.png)
 
 3. Ở thanh điều hướng bên trái, chọn [Roles](https://console.aws.amazon.com/iam/home#/roles) 
 
@@ -79,28 +79,28 @@ Trong bước này chúng ta sẽ tiến hành tạo IAM Role. Trong IAM Role n�
 
 7. Ở giao diện **Select trusted entity** chọn `AWS Service` rồi chọn `CodeBuild` và chọn **Next**
 
-	![alt text](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.5-iam-roles.png)
+	![alt text](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.5-iam-roles.png)
 
 9. Trong phần **Add permissions** chọn `fcj-workshop` và **next**
 	
-	![Select create policy](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.6-iam-roles.png)
+	![Select create policy](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.6-iam-roles.png)
 
 10. Ở giao diện **Name, review, and create**
     
 	1. Nhập **Role name**: `fcj-workshop-role`
 	
-	![Name role](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.7-iam-roles.png)
+	![Name role](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.7-iam-roles.png)
 	
 	2. Đặt tags cho policy và chọn **Create Role**.
 	
-	![Add tags and create role](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.8-iam-roles.png)
+	![Add tags and create role](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.8-iam-roles.png)
 
 11. Quay lại giao diện [Roles](https://console.aws.amazon.com/iam/home#/roles) Chọn Role vừa tạo (`fcj-workshop-role`)
 	
-	![Access created role](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.9-iam-roles.png)
+	![Access created role](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.9-iam-roles.png)
 
 12. Chọn tab `Trust relationships` rồi chọn `Edit trust policy`
-	![Tab Trust relationships](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.10-iam-roles.png)
+	![Tab Trust relationships](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.10-iam-roles.png)
 
 13. Tại giao diện **Edit trust policy** dán đoạn json sau:
 	
@@ -143,6 +143,6 @@ Trong bước này chúng ta sẽ tiến hành tạo IAM Role. Trong IAM Role n�
 	> ℹ️ Note:    
 	Tuy nhiên, này là do làm lab, trong thực tế nên phân chia rõ ràng role dùng cho dịch vụ nào tránh để 1 role có thừa quyền (least privilege) và dễ dàng cho việc bảo trì.
 
-	![Edit Trust policy](/fcj-workshop1/images/2-prerequiste/2.3-iam-role/2.3.11-iam-roles.png)
+	![Edit Trust policy](/$REPO_NAMEimages/2-prerequiste/2.3-iam-role/2.3.11-iam-roles.png)
 
 14. Chọn **Update policy**

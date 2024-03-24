@@ -25,7 +25,7 @@ AWS CodePipeline is a fully managed continuous delivery service that helps autom
         - For **Service role**, select **Existing service role**
         - For **Role ARN**, choose the ARN of the role created in step 2.3
         
-        ![Choose pipeline settings](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.1-create.png)
+        ![Choose pipeline settings](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.1-create.png)
         
         - Click **Next** to proceed to step 2
 
@@ -34,7 +34,7 @@ AWS CodePipeline is a fully managed continuous delivery service that helps autom
         - For **Repository name**, enter `workshop-codecommit`
         - For **Branch name**, choose **master**
 
-        ![Add source stage](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.2-create.png)
+        ![Add source stage](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.2-create.png)
 
         - Click **Next**
     
@@ -43,7 +43,7 @@ AWS CodePipeline is a fully managed continuous delivery service that helps autom
         - For **Region**, choose the region you are using
         - For **Project name**, enter `workshop-codebuild`
 
-        ![Add build stage](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.3-create.png)
+        ![Add build stage](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.3-create.png)
 
         - Click **Next**
 
@@ -53,7 +53,7 @@ AWS CodePipeline is a fully managed continuous delivery service that helps autom
         - For **Bucket**, enter `workshop1-123` (the name of the S3 bucket)
         - Check the **Extract file before deploy** box
 
-        ![Add deploy stage](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.4-create.png)
+        ![Add deploy stage](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.4-create.png)
 
         - Click **Next**
 
@@ -61,17 +61,17 @@ AWS CodePipeline is a fully managed continuous delivery service that helps autom
 
 4. Once the pipeline is created, it will run a test run once. If all steps are `succeded`, then it seems okay.
 
-    ![Pipeline first run](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.5-status.png)
-    ![Pipeline first run (2)](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.6-status.png)
-    ![Pipeline first run (3)](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.7-status.png)
+    ![Pipeline first run](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.5-status.png)
+    ![Pipeline first run (2)](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.6-status.png)
+    ![Pipeline first run (3)](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.7-status.png)
 
 5. Check if the files in the public directory have been pushed to the S3 bucket or not
 
-    ![S3 bucket check](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.8-s3-check.png)
+    ![S3 bucket check](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.8-s3-check.png)
 
 6. Access the website using the URL in step 3 (S3 static website)
 
-    ![S3 Website static hosting check](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.9-web-check.png)
+    ![S3 Website static hosting check](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.9-web-check.png)
 
 {{% notice note %}}
 You can eliminate the S3 deployment step in codepipeline and use code to move the files in the public directory to the S3 bucket. However, I did not do this because I want to clearly distinguish between the build and deployment steps.

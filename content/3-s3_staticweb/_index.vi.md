@@ -38,16 +38,16 @@ Một số điều cần biết về S3:
     Vì tên của bucket bắt buộc phải là duy nhất nên thường mình sẽ thêm 1 dãy số phía sau tên mong muốn.
     
     
-    ![General configuration](/fcj-workshop1/images/3-s3_staticweb/3.1-create.png)
+    ![General configuration](/$REPO_NAMEimages/3-s3_staticweb/3.1-create.png)
 
     - Object Ownership: `ACLs enabled`
     
-    ![Object ownership](/fcj-workshop1/images/3-s3_staticweb/3.2-create.png)
+    ![Object ownership](/$REPO_NAMEimages/3-s3_staticweb/3.2-create.png)
 
     - Tắt tính năng **Block all public access**
     - Chọn vào `I acknowledge that the current settings might result in this bucket and the objects within becoming public.` trong cảnh báo **Turning off block all public access might result in this bucket and the objects within becoming public**
     
-    ![Block public access settings for this bucket](/fcj-workshop1/images/3-s3_staticweb/3.3-create.png)
+    ![Block public access settings for this bucket](/$REPO_NAMEimages/3-s3_staticweb/3.3-create.png)
 
     - Cuối cùng là chọn `Create Bucket`
 
@@ -55,24 +55,24 @@ Một số điều cần biết về S3:
    
 1. Tính năng **S3 static hosting** nằm ở tab **Properties** của bucket. Theo như lúc mình làm thì sẽ chọn tab **Properties** sau đó tìm đến **Static website hosting** ở cuối của tab. 
 
-    ![Select Properties tab](/fcj-workshop1/images/3-s3_staticweb/3.5-config.png)
+    ![Select Properties tab](/$REPO_NAMEimages/3-s3_staticweb/3.5-config.png)
 
 1. Chọn vào **Edit** của tính năng **Static website hosting**
  
-    ![Edit Static Website Hosting feature](/fcj-workshop1/images/3-s3_staticweb/3.6-config.png)
+    ![Edit Static Website Hosting feature](/$REPO_NAMEimages/3-s3_staticweb/3.6-config.png)
 
 1. Ở trang **Edit static website hosting**:
 
    1. **Static website hosting**: `enable`
    1. **Index document**: `index.html`
    
-        ![Static Website Hosting interface](/fcj-workshop1/images/3-s3_staticweb/3.7-config.png)
+        ![Static Website Hosting interface](/$REPO_NAMEimages/3-s3_staticweb/3.7-config.png)
 
     1. Chọn **Save changes**
 
 1. Quanh trở lại tính năng **Static website hosting**, giao diện hiển thị đã thay đổi. (Lúc này lưu giá trị **bucket website endpoint** lại để sau này sử dụng)
 
-    ![Enable Static Website Hosting success](/fcj-workshop1/images/3-s3_staticweb/3.8-config.png)
+    ![Enable Static Website Hosting success](/$REPO_NAMEimages/3-s3_staticweb/3.8-config.png)
 
     > ℹ️  **Note**     
     > Lúc này S3 website endpoint này có thể xem là vẫn chưa hoạt động vì:
@@ -80,12 +80,12 @@ Một số điều cần biết về S3:
     > - Nếu có file thì người dùng vẫn không có quyền để truy cập file trong S3.    
     > -> Bước tiếp theo sẽ tiến hành cấu hình policy để người dùng có quyền truy cập vào nội dung file bên trong S3.    
 
-    ![Access S3 static website using http](/fcj-workshop1/images/3-s3_staticweb/3.9-check.png)
+    ![Access S3 static website using http](/$REPO_NAMEimages/3-s3_staticweb/3.9-check.png)
 
 1. Tìm đến Tab **Permissions**
 1. Tìm đến phần **Bucket policy**, chọn **Edit**
 
-    ![Bucket Policy](/fcj-workshop1/images/3-s3_staticweb/3.10-policy.png)
+    ![Bucket Policy](/$REPO_NAMEimages/3-s3_staticweb/3.10-policy.png)
 
 1. Dán đoạn json policy phía dưới vào.
 

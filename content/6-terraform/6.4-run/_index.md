@@ -46,27 +46,27 @@ After running the `terraform apply` command successfully, verify on the AWS inte
 
 Successful Apply command:
 
-![Alt text](/fcj-workshop1/images/6-terraform/6.4-run/6.4.1-apply.png)
+![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.1-apply.png)
 
 Check S3:
 
-![Alt text](/fcj-workshop1/images/6-terraform/6.4-run/6.4.2-s3.png)
+![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.2-s3.png)
 
 Check CodeCommit:
 
-![Alt text](/fcj-workshop1/images/6-terraform/6.4-run/6.4.3-codecommit.png)
+![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.3-codecommit.png)
 
 Check CodeBuild:
 
-![Alt text](/fcj-workshop1/images/6-terraform/6.4-run/6.4.4-codebuild.png)
+![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.4-codebuild.png)
 
 Check CodePipeline:
 
-![Alt text](/fcj-workshop1/images/6-terraform/6.4-run/6.4.5-codepipeline.png)
+![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.5-codepipeline.png)
 
 Access the website via S3 Static Web URL:
 
-![Alt text](/fcj-workshop1/images/6-terraform/6.4-run/6.4.6-website.png)
+![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.6-website.png)
 
 ## Cleanup
 

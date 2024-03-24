@@ -25,7 +25,7 @@ AWS CodePipeline là dịch vụ phân phối liên tục được quản lý ho
         - Mục **Service role** chọn **Existing service role**
         - Mục **Role ARN** chọn ARN của role đã được tạo ở phần 2.3
         
-        ![Choose pipeline settings](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.1-create.png)
+        ![Choose pipeline settings](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.1-create.png)
         
         - Chọn **Next** để sang step 2
 
@@ -34,7 +34,7 @@ AWS CodePipeline là dịch vụ phân phối liên tục được quản lý ho
         - Mục **Repository name** điền `workshop-codecommit`
         - Mục **Branch name** chọn **master**
 
-        ![Add source stage](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.2-create.png)
+        ![Add source stage](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.2-create.png)
 
         - Chọn **Next**
     
@@ -43,7 +43,7 @@ AWS CodePipeline là dịch vụ phân phối liên tục được quản lý ho
         -  Mục **Region** chọn region bạn đang sử dụng
         -  Mục **Project name** điền `workshop-codebuild`
 
-        ![Add build stage](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.3-create.png)
+        ![Add build stage](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.3-create.png)
 
         - Chọn **Next**
 
@@ -53,7 +53,7 @@ AWS CodePipeline là dịch vụ phân phối liên tục được quản lý ho
         - Mục **Bucket** điền `workshop1-123` (tên của S3 bucket)
         - Chọn vào ô **Extract file before deploy** 
 
-        ![Add deploy stage](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.4-create.png)
+        ![Add deploy stage](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.4-create.png)
 
         - Chọn **Next**
 
@@ -61,17 +61,17 @@ AWS CodePipeline là dịch vụ phân phối liên tục được quản lý ho
 
 1. Pipeline sau khi được tạo sử chạy thử 1 lần, nếu tất cả đều `succeded` thì có vẻ oke rồi á
 
-    ![Pipeline first run](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.5-status.png)
-    ![Pipeline first run (2)](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.6-status.png)
-    ![Pipeline first run (3)](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.7-status.png)
+    ![Pipeline first run](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.5-status.png)
+    ![Pipeline first run (2)](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.6-status.png)
+    ![Pipeline first run (3)](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.7-status.png)
 
 1. Kiểm tra các tệp trong thư mục public đã được đẩy sang S3 bucket chưa
 
-    ![S3 bucket check](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.8-s3-check.png)
+    ![S3 bucket check](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.8-s3-check.png)
 
 1. Truy cập website bằng url ở phần 3 (S3 static website)
 
-    ![S3 Website static hosting check](/fcj-workshop1/images/4-cicd/4.3-codepipeline/4.3.9-web-check.png)
+    ![S3 Website static hosting check](/$REPO_NAMEimages/4-cicd/4.3-codepipeline/4.3.9-web-check.png)
 
 {{% notice note %}}
 Bạn có thể loại bỏ bước triển khai S3 trong codepipeline và sử dụng mã để đưa các tệp trong thư mục public sang S3 bucket. Tuy nhiên, tôi không thực hiện điều này vì tôi muốn phân biệt rõ ràng giữa bước xây dựng và bước triển khai.

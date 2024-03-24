@@ -12,7 +12,7 @@ In this blog post, we will explore how to deploy a Hugo website with Continuous 
 
 In addition to deploying via the Console, we will also integrate Terraform to automate the construction of the lab. This will optimize the deployment process and infrastructure management efficiently.
 
-![Diagram](/fcj-workshop1/images/diagram.png)
+![Diagram](/$REPO_NAMEimages/diagram.png)
 
 ### Content
 
