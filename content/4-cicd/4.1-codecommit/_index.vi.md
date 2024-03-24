@@ -20,7 +20,8 @@ AWS CodeCommit là một dịch vụ quản lý mã nguồn được quản lý 
 
 1. Trong giao diện **Create Repository** 
    
-    - Tại mục **Repository name** điền `workhsop-codecommit`
+    - Tại mục **Repository name** điền `workshop-codecommit`
+    
     ![Repository settings](/fcj-workshop1/images/4-cicd/4.1-codecommit/4.1.1-create.png)
 
     - Kéo xuống cuối trang chọn **Create**

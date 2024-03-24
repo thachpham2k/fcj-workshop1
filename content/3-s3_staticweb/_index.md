@@ -23,7 +23,7 @@ Some key things to know about S3:
 - Common use cases for S3 include serving static websites, storing application data and backups, archiving data long term and exchanging data between applications.
 </details>
 
-## Thực hành
+## Practice
 
 1. Access the AWS S3 service on the console or through the link [AWS S3](https://s3.console.aws.amazon.com/s3/home)
 

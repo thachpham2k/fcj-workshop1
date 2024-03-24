@@ -20,7 +20,7 @@ AWS CodeCommit is a fully managed source control service that makes it easy for 
 
 3. In the **Create Repository** interface:
    
-    - In the **Repository name** field, enter `workhsop-codecommit`
+    - In the **Repository name** field, enter `workshop-codecommit`
     ![Repository settings](/fcj-workshop1/images/4-cicd/4.1-codecommit/4.1.1-create.png)
 
     - Scroll down to the bottom of the page and select **Create**
