@@ -21,13 +21,13 @@ AWS CodeCommit is a fully managed source control service that makes it easy for 
 3. In the **Create Repository** interface:
    
     - In the **Repository name** field, enter `workshop-codecommit`
-    ![Repository settings](/$REPO_NAMEimages/4-cicd/4.1-codecommit/4.1.1-create.png)
+    ![Repository settings](/images/4-cicd/4.1-codecommit/4.1.1-create.png)
 
     - Scroll down to the bottom of the page and select **Create**
 
 4. In the **CodeCommit Repositories** interface, select the repository you just created (`workshop-codecommit`). Under **Connection Steps**, save the repository URL.
 
-    ![Connection Steps](/$REPO_NAMEimages/4-cicd/4.1-codecommit/4.1.2-connection.png)
+    ![Connection Steps](/images/4-cicd/4.1-codecommit/4.1.2-connection.png)
 
 5. Log in to AWS CLI and git
 
@@ -45,7 +45,7 @@ AWS CodeCommit is a fully managed source control service that makes it easy for 
     # Enable using HTTP path for Git
     git config --global credential.UseHttpPath true
     ```
-    ![Config aws cli and git](/$REPO_NAMEimages/4-cicd/4.1-codecommit/4.1.3-cli-config.png)
+    ![Config aws cli and git](/images/4-cicd/4.1-codecommit/4.1.3-cli-config.png)
 
 6. Hugo project source code {{% button href="/source/000000-Workshop.zip" icon="fas fa-download" icon-position="right" %}}Download Source{{% /button %}}
 
@@ -61,13 +61,13 @@ AWS CodeCommit is a fully managed source control service that makes it easy for 
 
     Note: https://git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/workshop-codecommit is the path to the codecommit repo URL obtained in step 4 (In the Connection Steps section).
   
-    ![Push code to AWS CodeCommit](/$REPO_NAMEimages/4-cicd/4.1-codecommit/4.1.4-git-commit.png)
+    ![Push code to AWS CodeCommit](/images/4-cicd/4.1-codecommit/4.1.4-git-commit.png)
   
-    ![Push code to AWS CodeCommit (2)](/$REPO_NAMEimages/4-cicd/4.1-codecommit/4.1.5-git-commit.png)
+    ![Push code to AWS CodeCommit (2)](/images/4-cicd/4.1-codecommit/4.1.5-git-commit.png)
 
 8. Once completed, your source code has been successfully pushed to AWS CodeCommit.
 
-![Push sourcecode success](/$REPO_NAMEimages/4-cicd/4.1-codecommit/4.1.6-commit-success.png)
+![Push sourcecode success](/images/4-cicd/4.1-codecommit/4.1.6-commit-success.png)
 
 ## Attached Documents
 

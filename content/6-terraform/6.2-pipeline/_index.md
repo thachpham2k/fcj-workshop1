@@ -205,7 +205,7 @@ This is [Step 4: SETTING UP CI/CD](https://thachpham2k.github.io/fcj-workshop1/4
 
     In this step, we will create an AWS CodeCommit repository. Similar to Section 2 in [CODECOMMIT SETUP FOR SOURCE CODE STORAGE](https://thachpham2k.github.io/fcj-workshop1/4-cicd/4.1-codecommit/#practice).
 
-    ![Repository settings](/$REPO_NAMEimages/4-cicd/4.1-codecommit/4.1.1-create.png)
+    ![Repository settings](/images/4-cicd/4.1-codecommit/4.1.1-create.png)
 
     ```hcl
     resource "aws_codecommit_repository" "codecommit" {
@@ -218,7 +218,7 @@ This is [Step 4: SETTING UP CI/CD](https://thachpham2k.github.io/fcj-workshop1/4
 
     This step is similar to Section 3 in [CREATE CODEBUILD](https://thachpham2k.github.io/fcj-workshop1/4-cicd/4.2-codebuild/#practice).
 
-    ![Source](/$REPO_NAMEimages/4-cicd/4.2-codebuild/4.2.3-create.png)
+    ![Source](/images/4-cicd/4.2-codebuild/4.2.3-create.png)
 
     In the `source` section (CodeCommit), if the reference type is the `main` branch, we use the argument `source_version = main` or `source_version = refs/heads/main`.
 

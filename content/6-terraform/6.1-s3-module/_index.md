@@ -65,7 +65,7 @@ Instead of just one step and providing multiple pieces of information like on th
 
     Similar to the **General configuration** step in section *3.* of [Pratice in Install S3 Static Web](https://thachpham2k.github.io/fcj-workshop1/3-s3_staticweb/#practice).
 
-    ![General configuration](/$REPO_NAMEimages/3-s3_staticweb/3.1-create.png)
+    ![General configuration](/images/3-s3_staticweb/3.1-create.png)
 
     ```hcl
     resource "aws_s3_bucket" "s3_bucket" {
@@ -83,7 +83,7 @@ Instead of just one step and providing multiple pieces of information like on th
 
     Similar to **Object Ownership** in step *3.* of [Pratice in Install S3 Static Web](https://thachpham2k.github.io/fcj-workshop1/3-s3_staticweb/#practice).
 
-    ![Object ownership](/$REPO_NAMEimages/3-s3_staticweb/3.2-create.png)
+    ![Object ownership](/images/3-s3_staticweb/3.2-create.png)
 
     ```hcl
     resource "aws_s3_bucket_ownership_controls" "bucket_owner" {
@@ -100,7 +100,7 @@ Instead of just one step and providing multiple pieces of information like on th
 
     Similar to **Block Public Access settings for this bucket** in step *3.* of [Pratice in Install S3 Static Web](https://thachpham2k.github.io/fcj-workshop1/3-s3_staticweb/#practice).
 
-    ![Block public access settings for this bucket](/$REPO_NAMEimages/3-s3_staticweb/3.3-create.png)
+    ![Block public access settings for this bucket](/images/3-s3_staticweb/3.3-create.png)
 
     ```hcl
     resource "aws_s3_bucket_public_access_block" "bucket_public_access_block" {
@@ -138,7 +138,7 @@ Instead of just one step and providing multiple pieces of information like on th
 
     This section is related to steps 4 to 7 in [Pratice in Install S3 Static Web](https://thachpham2k.github.io/fcj-workshop1/3-s3_staticweb/#practice).
 
-    ![Static Website Hosting interface](/$REPO_NAMEimages/3-s3_staticweb/3.7-config.png)
+    ![Static Website Hosting interface](/images/3-s3_staticweb/3.7-config.png)
     
     To enable the **Static Website Hosting** feature of the S3 Bucket, we use the `aws_s3_bucket_website_configuration` resource through the following configuration:
     

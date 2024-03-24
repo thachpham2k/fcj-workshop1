@@ -46,27 +46,27 @@ Sau khi thực hiện lệnh `terraform apply`, hãy kiểm tra lại trên giao
 
 Chạy Apply command thành công:
 
-![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.1-apply.png)
+![Alt text](/images/6-terraform/6.4-run/6.4.1-apply.png)
 
 Kiểm tra S3:
 
-![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.2-s3.png)
+![Alt text](/images/6-terraform/6.4-run/6.4.2-s3.png)
 
 Kiểm tra CodeCommit:
 
-![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.3-codecommit.png)
+![Alt text](/images/6-terraform/6.4-run/6.4.3-codecommit.png)
 
 Kiểm tra CodeBuild:
 
-![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.4-codebuild.png)
+![Alt text](/images/6-terraform/6.4-run/6.4.4-codebuild.png)
 
 Kiểm tra CodePipeline:
 
-![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.5-codepipeline.png)
+![Alt text](/images/6-terraform/6.4-run/6.4.5-codepipeline.png)
 
 Truy cập trang web bằng S3 Static Web URL:
 
-![Alt text](/$REPO_NAMEimages/6-terraform/6.4-run/6.4.6-website.png)
+![Alt text](/images/6-terraform/6.4-run/6.4.6-website.png)
 
 ## Dọn dẹp
 

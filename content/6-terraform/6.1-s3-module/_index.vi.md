@@ -65,7 +65,7 @@ Thay vì chỉ có một bước và cung cấp nhiều thông tin như trên gi
 
     Tương tự bước **General configuration** ở mục *3.* phần [Thực Hành của CÀI ĐẶT S3 STATIC WEB](https://thachpham2k.github.io/fcj-workshop1/vi/3-s3_staticweb/#th%E1%BB%B1c-h%C3%A0nh)
 
-    ![General configuration](/$REPO_NAMEimages/3-s3_staticweb/3.1-create.png)
+    ![General configuration](/images/3-s3_staticweb/3.1-create.png)
 
     ```hcl
     resource "aws_s3_bucket" "s3_bucket" {
@@ -83,7 +83,7 @@ Thay vì chỉ có một bước và cung cấp nhiều thông tin như trên gi
 
     Tương tự như **Object Ownership** ở mục *3.* phần [Thực Hành CÀI ĐẶT S3 STATIC WEB](https://thachpham2k.github.io/fcj-workshop1/vi/3-s3_staticweb/#th%E1%BB%B1c-h%C3%A0nh)
 
-    ![Object ownership](/$REPO_NAMEimages/3-s3_staticweb/3.2-create.png)
+    ![Object ownership](/images/3-s3_staticweb/3.2-create.png)
 
     ```hcl
     resource "aws_s3_bucket_ownership_controls" "bucket_owner" {
@@ -100,7 +100,7 @@ Thay vì chỉ có một bước và cung cấp nhiều thông tin như trên gi
 
     Tương tự như **Block Public Access settings for this bucket** ở mục *3.* phần [Thực Hành CÀI ĐẶT S3 STATIC WEB](https://thachpham2k.github.io/fcj-workshop1/vi/3-s3_staticweb/#th%E1%BB%B1c-h%C3%A0nh)
 
-    ![Block public access settings for this bucket](/$REPO_NAMEimages/3-s3_staticweb/3.3-create.png)
+    ![Block public access settings for this bucket](/images/3-s3_staticweb/3.3-create.png)
 
     ```hcl
     resource "aws_s3_bucket_public_access_block" "bucket_public_access_block" {
@@ -134,7 +134,7 @@ Thay vì chỉ có một bước và cung cấp nhiều thông tin như trên gi
 
     Phần này tương đương với mục 4 đến 7 trong [Thực Hành CÀI ĐẶT S3 STATIC WEB](https://thachpham2k.github.io/fcj-workshop1/vi/3-s3_staticweb/#th%E1%BB%B1c-h%C3%A0nh)
 
-    ![Static Website Hosting interface](/$REPO_NAMEimages/3-s3_staticweb/3.7-config.png)
+    ![Static Website Hosting interface](/images/3-s3_staticweb/3.7-config.png)
     
     Để kích hoạt tính năng **Static Website Hosting** của S3 Bucket, chúng ta sử dụng resource `aws_s3_bucket_website_configuration` thông qua cấu hình dưới đây:
     
