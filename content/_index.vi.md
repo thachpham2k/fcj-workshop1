@@ -12,6 +12,8 @@ Trong bài viết này, chúng ta sẽ khám phá cách triển khai một trang
 
 Ngoài việc triển khai bằng Console, chúng ta cũng sẽ kết hợp với Terraform để xây dựng bài lab một cách tự động. Điều này sẽ giúp tối ưu hóa quy trình triển khai và quản lý hạ tầng một cách hiệu quả.
 
+![Diagram](/fcj-workshop1/images/diagram.png)
+
 ### Nội dung
 
 {{% children  %}}
